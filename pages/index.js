@@ -10,8 +10,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-
-
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -65,20 +63,3 @@ export default function Home() {
     </div>
   )
 }
-
-export const getStaticProps = async () => {
-  const key = {
-    headers: { 'X-API-KEY': process.env.API_KEY },
-  };
-  const res = await fetch(
-    `https://tkyk-portfolio.microcms.io/api/v1/list`,
-    key,
-  );
-  const data = await res.json();
-
-  return {
-    props: {
-      blogs: data.contents,
-    }
-  }
-};

@@ -1,20 +1,15 @@
 {
-  "name": "portfolio",
-  "version": "1.0.0",
-  "description": "ポートフォリオサイト",
-  "main": "index.js",
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tkyko13/portfolio.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tkyko13/portfolio/issues"
-  },
-  "homepage": "https://github.com/tkyko13/portfolio#readme"
+  "dependencies": {
+    "next": "10.0.6",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  }
 }
